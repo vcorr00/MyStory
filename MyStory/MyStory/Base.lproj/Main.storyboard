@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9PT-jY-Fvz">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Iron Man-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvQ-5K-8ha">
+                                <rect key="frame" x="133" y="498.99999999999994" width="127" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="My backstory"/>
+                                <connections>
+                                    <action selector="btnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RPM-eF-oVk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQW-3L-DM0">
+                                <rect key="frame" x="133" y="558" width="127" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="My weakness"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvY-SJ-CgJ">
+                                <rect key="frame" x="128" y="617" width="137" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="My teammates"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="kfb-rz-uQ3">
+                                <rect key="frame" x="16" y="-153" width="361" height="900"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="900" id="21z-dp-z5M"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hvY-SJ-CgJ" secondAttribute="bottom" constant="166.66666666666663" id="4ez-Wz-BZW"/>
+                            <constraint firstItem="JvQ-5K-8ha" firstAttribute="leading" secondItem="dQW-3L-DM0" secondAttribute="leading" id="EQM-Gp-6lR"/>
+                            <constraint firstItem="JvQ-5K-8ha" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="KQj-rU-Lkl"/>
+                            <constraint firstItem="hvY-SJ-CgJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="Wqd-bf-GSd"/>
+                            <constraint firstItem="kfb-rz-uQ3" firstAttribute="centerX" secondItem="hvY-SJ-CgJ" secondAttribute="centerX" id="bbl-j5-tp9"/>
+                            <constraint firstItem="JvQ-5K-8ha" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="396.00000000000006" id="bv5-xo-ffN"/>
+                            <constraint firstItem="kfb-rz-uQ3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cSR-JJ-SHT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kfb-rz-uQ3" secondAttribute="bottom" constant="166" id="loX-hm-2gm"/>
+                            <constraint firstItem="kfb-rz-uQ3" firstAttribute="centerX" secondItem="JvQ-5K-8ha" secondAttribute="centerX" id="ovm-pn-5bD"/>
+                            <constraint firstItem="kfb-rz-uQ3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sjv-Dt-dDj"/>
+                            <constraint firstItem="kfb-rz-uQ3" firstAttribute="centerX" secondItem="dQW-3L-DM0" secondAttribute="centerX" id="tDL-dG-aeJ"/>
+                            <constraint firstItem="hvY-SJ-CgJ" firstAttribute="top" secondItem="dQW-3L-DM0" secondAttribute="bottom" constant="24.666666666666629" id="xD3-kk-QvE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Iron Man" id="XHu-d3-VVG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002.2900763358778" y="-27.464788732394368"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="UHa-3f-6AX">
+            <objects>
+                <viewController id="L3t-Ya-QZN" customClass="DetailViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W9y-zh-X0z">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="6Cp-YO-Pz2">
+                                <rect key="frame" x="66" y="119" width="261" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qew-20-Djg">
+                                <rect key="frame" x="76" y="292" width="240" height="405"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">I am Tony Stark, the man behind the iconic Iron Man suit. My journey began as a brilliant inventor and billionaire playboy, heir to Stark Industries, a weapons manufacturing company. My life took a dramatic turn when I was captured by terrorists who wanted my weapons. While in captivity, I created a suit of armor that not only saved my life but also ignited my transformation into a hero. Determined to use my genius for good, I perfected the Iron Man suit, equipping it with state-of-the-art technology and weaponry. As Iron Man, I've dedicated my life to protecting the world from threats both foreign and domestic, all while grappling with the complexities of being a superhero and a flawed human being.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Backstory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pf-Ve-5MW">
+                                <rect key="frame" x="144" y="79" width="112" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="etW-9C-38f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b74-vD-sQi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2915.2671755725191" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8x5-06-1AI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9PT-jY-Fvz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bpv-cj-lqR">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EB1-hf-zft"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nq-au-dMG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1075.5725190839694" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="720" height="720"/>
+        <image name="Image 1" width="1200" height="675"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
